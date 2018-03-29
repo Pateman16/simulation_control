@@ -1,9 +1,10 @@
 If you have the enviroment set up as the tutorial found here https://drive.google.com/open?id=1TP-kR2L8zDoeb2tTdHy4Co4Aqj2QQSS0wQGtv7M0Dlo
-this is what you got to do
 
-open three new terminals
+Follow https://github.com/AndersBogga/f550_amazing to set up the grasping of the UAV
 
-terminal1: roslaunch simulation_control posix_sitl.launch
+Start
+
+terminal1: roslaunch simulation_control posix_sitl_f550.launch
 
 wait a little while
 
@@ -11,4 +12,4 @@ terminal2: roslaunch simulation_control px4.launch fcu_url:="udp://:14550@127.0.
 
 terminal3: roslaunch simulation_control simulation_control.launch 
 
-have fun
+to see the tensorflow detection: rosrun image_view image_view image:=/tensorflow_detection/image
